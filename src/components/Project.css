@@ -1,0 +1,99 @@
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.like-button {
+  background: none;
+  border: none;
+  color: #ff4d4f;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.like-button:hover {
+  color: #ff7875;
+}
+
+/* Container for the like and comment buttons */
+.like-comments {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Like button styles */
+.like-comments .like-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: #ff4d4f;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.like-comments .like-button:hover {
+  transform: scale(1.1);
+}
+
+/* Comment button styles */
+.like-comments .icon-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.like-comments .icon-button:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+.addproject {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 0.6rem 1.5rem;
+  border: 2px solid #3e3e3e;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  margin-bottom:8px;
+}
+
+.addproject:hover {
+  background-color: #3e3e3e;
+  transform: scale(1.05);
+}
+
+.addproject:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}

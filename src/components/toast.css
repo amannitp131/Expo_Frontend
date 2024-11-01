@@ -1,0 +1,14 @@
+
+.Toastify__toast {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  border-radius: 5px;
+}
+
+.Toastify__toast--success {
+  background: rgba(76, 175, 80, 0.9);
+}
+
+.Toastify__toast--error {
+  background: rgba(244, 67, 54, 0.9);
+}
