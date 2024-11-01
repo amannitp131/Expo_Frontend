@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import "./Dashboard.css";
-import "./Addskill.css";
+import "./AddSkill.css";
 import { Link } from "react-router-dom";
 import image from "../assets/logo.png";
 import { toast, ToastContainer } from "react-toastify";
