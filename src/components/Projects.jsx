@@ -15,7 +15,7 @@ export default function Projects() {
 
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/getdata", {
+        const response = await fetch("https://expo-backend-1.onrender.com/getdata", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -44,7 +44,7 @@ export default function Projects() {
 
     const fetchProjects = async () => {
       try {
-        const response = await fetch("http://localhost:3000/myproject", {
+        const response = await fetch("https://expo-backend-1.onrender.com/myproject", {
           method: "GET",
           headers: {
             email: localStorage.getItem('userEmail'),
@@ -151,7 +151,7 @@ export default function Projects() {
                 >
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
-                  {project.images.map((image, i) => (
+                  {/* {project.images.map((image, i) => (
                     <img
                       key={i}
                       src={`http://localhost:3000${image}`} // Using the correct URL
@@ -164,9 +164,10 @@ export default function Projects() {
                         width: "100%",
                         height: "auto",
                         borderRadius: "8px",
+                        justifyContent : "center"
                       }}
                     />
-                  ))}
+                  ))} */}
                   <p>
                     <strong>Technologies:</strong>{" "}
                     {project.technologies.join(", ")}

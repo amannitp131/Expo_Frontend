@@ -151,7 +151,7 @@
   background-color: #334155;
   border-radius: 10px;
   color: #f1f5f9;
-  width: 75%;
+  width: 80%;
 }
 
 .info-box {
@@ -162,6 +162,12 @@
   width: 100%;
   max-width: 600px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 480px) {
+  .info-box {
+    width: 95%; /* Increase width on very small screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
 }
 
 .personal-info-box,

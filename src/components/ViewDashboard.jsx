@@ -19,7 +19,7 @@ export default function ViewDashboard() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3000/viewdashboard?email=${email}`,
+          `https://expo-backend-1.onrender.com/viewdashboard?email=${email}`,
           {
             method: "GET",
             headers: { "Content-Type": "application/json" },
@@ -171,7 +171,7 @@ export default function ViewDashboard() {
                         View Demo
                       </a>
                     </p>
-                    {project.images.map((image, i) => (
+                    {/* {project.images.map((image, i) => (
                       <img
                         key={i}
                         src={`http://localhost:3000${image}`} // Using the correct URL
@@ -186,7 +186,7 @@ export default function ViewDashboard() {
                           borderRadius: "8px",
                         }}
                       />
-                    ))}
+                    ))} */}
                   </div>
                 ))
               ) : (

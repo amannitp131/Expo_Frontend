@@ -18,7 +18,7 @@ const ProjectReel = ({ handleToggleLike, toggleComments }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/allproject", {
+        const response = await fetch("https://expo-backend-1.onrender.com/allproject", {
           method: "GET",
           headers: { "Content-Type": "application/json" },
         });
@@ -62,7 +62,7 @@ const ProjectReel = ({ handleToggleLike, toggleComments }) => {
   };
 
   const handleLikes = (projectId, index) => {
-    fetch("http://localhost:3000/addlike", {
+    fetch("https://expo-backend-1.onrender.com/addlike", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -85,7 +85,7 @@ const ProjectReel = ({ handleToggleLike, toggleComments }) => {
           });
         } else {
           console.log("Like action was not successful:", data.message);
-          toast.error(data.message);
+          
         }
       })
       .catch((error) => {
@@ -112,7 +112,7 @@ const ProjectReel = ({ handleToggleLike, toggleComments }) => {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/addcomment", {
+      const response = await fetch("https://expo-backend-1.onrender.com/addcomment", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -176,13 +176,13 @@ const ProjectReel = ({ handleToggleLike, toggleComments }) => {
           >
             <h1>{project.title}</h1>
            <h3 className="madeby">
-  <Link to={`/viewdashboard?email=${project.email}`}>
+  <Link to={`/viewdashboard?email=${project.email}`} className="purple-text">
     {project.email}
   </Link>
 </h3>
 
             <p>{project.description}</p>
-            {project.images.map((image, i) => (
+            {/* {project.images.map((image, i) => (
               <img
                 key={i}
                 src={`http://localhost:3000${image}`}
@@ -197,7 +197,7 @@ const ProjectReel = ({ handleToggleLike, toggleComments }) => {
                   borderRadius: "8px",
                 }}
               />
-            ))}
+            ))} */}
             <p>
               <strong>Technologies:</strong> {project.technologies.join(", ")}
             </p>

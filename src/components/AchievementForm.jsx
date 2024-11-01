@@ -14,7 +14,7 @@ const AchievementForm = () => {
     document.body.style.padding = "0";
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/getdata", {
+        const response = await fetch("https://expo-backend-1.onrender.com/getdata", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -52,7 +52,7 @@ const AchievementForm = () => {
     setIsSubmitting(true);
     e.preventDefault();
 
-    fetch("http://localhost:3000/addachievement", {
+    fetch("https://expo-backend-1.onrender.com/addachievement", {
       method: "POST",
       body: JSON.stringify({
         email: localStorage.getItem("userEmail"),

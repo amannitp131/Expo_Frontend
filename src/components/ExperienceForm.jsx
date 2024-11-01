@@ -17,7 +17,7 @@ const ExperienceForm = () => {
     document.body.style.padding = "0";
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/getdata", {
+        const response = await fetch("https://expo-backend-1.onrender.com/getdata", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -65,7 +65,7 @@ const ExperienceForm = () => {
     const callback1 = (resp) => {
       resp.json().then(callback2);
     };
-    fetch("http://localhost:3000/addexperience", {
+    fetch("https://expo-backend-1.onrender.com/addexperience", {
       method: "POST",
       body: JSON.stringify({
         email: localStorage.getItem("userEmail"),

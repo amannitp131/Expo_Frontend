@@ -40,7 +40,7 @@ const Login = () => {
       resp.json().then(callback2);
     };
 
-    fetch("http://localhost:3000/login", {
+    fetch("https://expo-backend-1.onrender.com/login", {
       method: "POST",
       body: JSON.stringify({
         email: formData.email,

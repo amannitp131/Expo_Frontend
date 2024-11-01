@@ -49,7 +49,7 @@ const OtpInput = () => {
   const handleOTPVerification = () => {
     const otpString = otp.join(""); 
 
-    fetch("http://localhost:3000/verify-otp", {
+    fetch("https://expo-backend-1.onrender.com/verify-otp", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, otp: otpString }),
@@ -57,6 +57,7 @@ const OtpInput = () => {
       .then((response) => response.json())
       .then((data) => {
         if (data.status) {
+          console.log(otpString);
           toast.success("Email verified successfully!");
           setTimeout(() => {
             window.location.href = "/dashboard";

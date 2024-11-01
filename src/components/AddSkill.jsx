@@ -18,7 +18,7 @@ export default function Addskill() {
     document.body.style.padding = "0";
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/getdata", {
+        const response = await fetch("https://expo-backend-1.onrender.com/getdata", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -96,7 +96,7 @@ export default function Addskill() {
       const skillToAdd = search; 
 
      
-      fetch("http://localhost:3000/addskill", {
+      fetch("https://expo-backend-1.onrender.com/addskill", {
         method: "POST",
         body: JSON.stringify({ email: email, skill: skillToAdd }),
         headers: {
@@ -129,7 +129,7 @@ export default function Addskill() {
   };
 
   const fetchSkills = () => {
-    fetch("http://localhost:3000/getskill", {
+    fetch("https://expo-backend-1.onrender.com/getskill", {
       method: "GET",
       headers: {
         email: localStorage.getItem("userEmail"),

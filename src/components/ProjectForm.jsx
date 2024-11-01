@@ -14,7 +14,7 @@ export default function AddProjectForm() {
 
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/getdata", {
+        const response = await fetch("https://expo-backend-1.onrender.com/getdata", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -111,7 +111,7 @@ const handleAddProject = async () => {
     });
 
     try {
-      const response = await fetch("http://localhost:3000/addproject", {
+      const response = await fetch("https://expo-backend-1.onrender.com/addproject", {
         method: "POST",
         body: formData,
       });
