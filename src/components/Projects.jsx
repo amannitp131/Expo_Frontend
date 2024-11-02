@@ -154,7 +154,7 @@ export default function Projects() {
                   {/* {project.images.map((image, i) => (
                     <img
                       key={i}
-                      src={`http://localhost:3000${image}`} // Using the correct URL
+                      src={`https://expo-backend-1.onrender.com${image}`} // Using the correct URL
                       alt={`Project ${index} Image ${i}`}
                       onError={(e) => {
                         e.target.onerror = null; // Prevent infinite loop

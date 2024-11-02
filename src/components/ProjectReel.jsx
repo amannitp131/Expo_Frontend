@@ -185,7 +185,7 @@ const ProjectReel = ({ handleToggleLike, toggleComments }) => {
             {/* {project.images.map((image, i) => (
               <img
                 key={i}
-                src={`http://localhost:3000${image}`}
+                src={`https://expo-backend-1.onrender.com${image}`}
                 alt={`Project ${index} Image ${i}`}
                 onError={(e) => {
                   e.target.onerror = null;

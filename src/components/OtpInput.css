@@ -1,175 +1,106 @@
+/* Background gradient */
 
-body{
-  background-color: #161616;
-}
-/* Main Container */
+
+/* OTP form container */
 .otp-form-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  background-color: #161616;
-  padding: 20px;
-}
-
-.otp-form-container .otp-box {
-  background-color: #4b4949;
-  padding: 30px 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 32px;
+  max-width: 720px;
   width: 100%;
   text-align: center;
-  color: wheat;
 }
 
-.otp-form-container .otp-box .logo-container {
-  margin-bottom: 20px;
+/* Logo container */
+.logo-container {
+  margin-bottom: 16px;
 }
 
-.otp-form-container .otp-box .logo {
-  max-width: 80px;
+.logo {
+  width: 60px;
   height: auto;
 }
 
-.otp-form-container .otp-box .otp-heading {
+/* Heading style */
+.otp-heading {
   font-size: 1.5rem;
-  color: wheat;
-  margin-bottom: 20px;
+  font-weight: bold;
+  color: #2d3748;
+  margin-bottom: 16px;
 }
 
-/* OTP Form */
-.otp-form-container .otp-box .otp-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.otp-form-container .otp-box .otp-form .otp-container {
+/* OTP input fields */
+.otp-container {
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
-.otp-form-container .otp-box .otp-form .otp-container .otp-input {
-  width: 5px;
-  height: 25px;
+
+
+
+
+@media (max-width: 500px) {
+  .otp-form-container {
+      padding: 24px;
+      max-width: 280px;
+  }
+
+  .otp-heading {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+  }
+
+  .otp-container {
+      gap: 6px;
+  }
+
+ 
+
+  .verify-button {
+      padding: 10px;
+  }
+
+  .logo {
+      width: 50px;
+  }
+
+  .otp-form-container p {
+      font-size: 0.9rem;
+      
+  }
+}
+
+.otp-input {
+  width: 1rem;
+  height: 3rem;
   text-align: center;
-  font-size: 1.25rem;
-  color: wheat;
-  background-color: #333;
-  border: 1px solid #555;
-  border-radius: 4px;
-  transition: all 0.2s ease-in-out;
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
 }
 
-.otp-form-container .otp-box .otp-form .otp-container .otp-input:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+.otp-input:focus {
   outline: none;
+  border: 1px solid #007bff;
 }
 
-/* Verify Button */
-.otp-form-container .otp-box .otp-form .verify-button {
-  background-color: #007bff;
-  color: white;
-  padding: 12px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  width: 100%;
-  max-width: 300px;
-}
-
-.otp-form-container .otp-box .otp-form .verify-button:hover {
-  background-color: #0056b3;
-}
-
-/* Toast Container */
-.Toastify__toast-container {
-  font-size: 0.9rem;
-}
-
-/* Responsive Design */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .otp-form-container .otp-box {
-    padding: 20px;
-    max-width: 550px;
-  }
-
-  .otp-form-container .otp-box .otp-heading {
-    font-size: 1.25rem;
-  }
-
-  .otp-form-container .otp-box .otp-form .otp-container .otp-input {
-    width: 5px;
-  height: 25px;
-    font-size: 1.1rem;
-  }
-
-  .otp-form-container .otp-box .otp-form .verify-button {
-    font-size: 0.9rem;
+  .otp-input {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
   }
 }
 
 @media (max-width: 480px) {
-  
-
-  .otp-form-container .otp-box {
-    padding: 20px;
-    width: 500px;
-    background-color: #333;
-    border-radius: 10px;
-  }
-
-  .otp-form-container .otp-box .otp-heading {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    color: #f5f5f5;
-  }
-
-  .otp-form-container .otp-box .otp-form .otp-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 6px;
-    margin-bottom: 15px;
-  }
-
-  .otp-form-container .otp-box .otp-form .otp-container .otp-input {
-    display: flex;
-    justify-content: center;
-    width: 1px;
-    height: 15px;
-    font-size: 1.2rem;
-    color: #f5f5f5;
-    background-color: #444;
-    border: 1px solid #666;
-    border-radius: 5px;
-    text-align: center;
-  }
-
-  .otp-form-container .otp-box .otp-form .otp-container .otp-input:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
-  }
-
-  .otp-form-container .otp-box .otp-form .verify-button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 12px 20px;
+  .otp-input {
+    width: 1rem;
+    height: 2rem;
     font-size: 1rem;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 250px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-  }
-
-  .otp-form-container .otp-box .otp-form .verify-button:hover {
-    background-color: #0056b3;
   }
 }
