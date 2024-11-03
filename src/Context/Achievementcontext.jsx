@@ -1,9 +1,9 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
-// Create a context for achievements
+
 export const AchievementContext = createContext();
 
-// Provider component for managing achievements
+
 export const AchievementProvider = ({ children }) => {
   const [userAchievements, setUserAchievements] = useState([]);
   const [loading, setLoading] = useState(true);
