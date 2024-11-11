@@ -90,7 +90,7 @@ const Footer = () => {
             </li>
             <li style={{ margin: "10px 0" }}>
               <a
-                href="#"
+                href="/signUp"
                 style={{
                   color: "#ffffff",
                   textDecoration: "none",
