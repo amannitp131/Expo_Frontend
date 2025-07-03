@@ -238,9 +238,8 @@ NITP_WebDC/
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 👥 Team
+## 👥 Developed by me
 
-Developed by students of NIT Patna for the WebDC community.
 
 ## 🆘 Support
 
